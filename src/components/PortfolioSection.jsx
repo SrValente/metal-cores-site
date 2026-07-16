@@ -5,24 +5,24 @@ import styles from './PortfolioSection.module.css';
 export default function PortfolioSection() {
   const works = [
     {
-      title: 'Centro Logístico Avançado',
-      description: 'Estrutura com vão livre extensivo. Mais de 120 toneladas de aço aplicadas com tolerâncias milimétricas, cumprindo rigorosamente os cronogramas da construtora.',
+      title: '1ª Fase Ninho do Urubu - CRF',
+      description: 'Estruturas de alta performance para o centro de treinamento do Clube de Regatas do Flamengo. Entrega com tolerâncias milimétricas, cumprindo rigorosamente os cronogramas.',
       image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2070&auto=format&fit=crop'
     },
     {
-      title: 'Complexo Corporativo',
-      description: 'Implementação de fachadas unitizadas com isolamento acústico superior, revitalizando a volumetria arquitetônica com estanqueidade certificada.',
+      title: 'Hospital Municipal Pedro II',
+      description: 'Engenharia de precisão para ambiente hospitalar de alta complexidade. Implementação de fachadas e esquadrias com isolamento técnico e estanqueidade certificada.',
+      image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=2053&auto=format&fit=crop'
+    },
+    {
+      title: 'Complexo Esportivo de Deodoro',
+      description: 'Participação na infraestrutura metálica e envidraçamentos deste pólo olímpico. Rigor normativo máximo para garantir a segurança em edificações de grande concentração pública.',
+      image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop'
+    },
+    {
+      title: 'Câmara Municipal de Angra dos Reis',
+      description: 'Soluções arquitetônicas e estruturais completas para o setor público. Esquadrias e revestimentos projetados para suportar intempéries costeiras e manter a estética institucional.',
       image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop'
-    },
-    {
-      title: 'Sede Administrativa Industrial',
-      description: 'Structural Glazing executado com precisão e esquadrias de alumínio sob norma NBR 10821 para resistência máxima a ventos severos.',
-      image: 'https://images.unsplash.com/photo-1551043047-1d2adf00f3ef?q=80&w=2070&auto=format&fit=crop'
-    },
-    {
-      title: 'Hangar de Distribuição',
-      description: 'Montagem de superestrutura pesada para galpão de escala monumental. Desafios logísticos superados com a orquestração de nossa equipe especializada.',
-      image: 'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?q=80&w=2072&auto=format&fit=crop'
     }
   ];
 

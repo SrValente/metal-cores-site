@@ -29,7 +29,7 @@ export default function Footer() {
         <div className={styles.contact}>
           <h4>Departamento Comercial & Engenharia</h4>
           <p>Central de Atendimento / WhatsApp:</p>
-          <p className={styles.highlight}>(21) 99661-5156</p>
+          <p className={styles.highlight}>(21) 97446-7506</p>
           <p>E-mail Corporativo:</p>
           <p className={styles.highlight}>comercial@grupometalcores.com.br</p>
           <div className={styles.social}>

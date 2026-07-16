@@ -17,7 +17,7 @@ export default function WhatsAppButton({ text = 'Faça seu Orçamento', classNam
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const phone = '5521996615156';
+    const phone = '5521974467506';
     const textMessage = `Olá, me chamo *${formData.name}* da empresa/projeto *${formData.company}*.\n\nGostaria de solicitar um estudo/orçamento sobre:\n${formData.message}`;
     const encodedText = encodeURIComponent(textMessage);
     window.open(`https://wa.me/${phone}?text=${encodedText}`, '_blank');
