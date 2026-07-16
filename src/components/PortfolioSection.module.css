@@ -1,0 +1,108 @@
+.sectionBg {
+  background-color: var(--bg-secondary);
+}
+
+.header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: var(--text-secondary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  position: relative;
+  height: 380px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  cursor: pointer;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.8s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.08);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(9, 10, 15, 0.95));
+  padding: 40px 24px 24px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.overlay h3 {
+  font-size: 22px;
+  margin: 0 0 8px 0;
+  transform: translateY(10px);
+  transition: var(--transition-premium);
+}
+
+.description {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 0;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: var(--transition-premium);
+}
+
+.card:hover .overlay h3 {
+  transform: translateY(0);
+}
+
+.card:hover .description {
+  max-height: 100px;
+  opacity: 1;
+  margin-top: 8px;
+}
+
+.ctaFinal {
+  margin-top: 80px;
+  text-align: center;
+  background-color: var(--bg-primary);
+  padding: 60px 40px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+}
+
+.ctaFinal h3 {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.ctaFinal p {
+  color: var(--text-secondary);
+  max-width: 700px;
+  margin: 0 auto 32px;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
