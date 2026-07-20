@@ -7,22 +7,26 @@ export default function PortfolioSection() {
     {
       title: '1ª Fase Ninho do Urubu - CRF',
       description: 'Estruturas de alta performance para o centro de treinamento do Clube de Regatas do Flamengo. Entrega com tolerâncias milimétricas, cumprindo rigorosamente os cronogramas.',
-      image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2070&auto=format&fit=crop'
+      image: '/images/portfolio/NinhoUrubuMelhorada.png',
+      position: 'bottom center'
     },
     {
       title: 'Hospital Municipal Pedro II',
       description: 'Engenharia de precisão para ambiente hospitalar de alta complexidade. Implementação de fachadas e esquadrias com isolamento técnico e estanqueidade certificada.',
-      image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=2053&auto=format&fit=crop'
+      image: '/images/portfolio/hospital-pedro-ii.webp',
+      position: 'center'
     },
     {
-      title: 'Complexo Esportivo de Deodoro',
-      description: 'Participação na infraestrutura metálica e envidraçamentos deste pólo olímpico. Rigor normativo máximo para garantir a segurança em edificações de grande concentração pública.',
-      image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop'
+      title: 'Edifício Residencial e Comercial',
+      description: 'Fachadas envidraçadas e esquadrias de alumínio de alta performance para edifícios corporativos e residenciais de alto padrão no Rio de Janeiro.',
+      image: '/images/portfolio/edificio-residencial.webp',
+      position: 'center'
     },
     {
       title: 'Câmara Municipal de Angra dos Reis',
       description: 'Soluções arquitetônicas e estruturais completas para o setor público. Esquadrias e revestimentos projetados para suportar intempéries costeiras e manter a estética institucional.',
-      image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop'
+      image: '/images/portfolio/angra-dos-reis.webp',
+      position: 'center'
     }
   ];
 
@@ -41,7 +45,10 @@ export default function PortfolioSection() {
             <div key={index} className={styles.card}>
               <div 
                 className={styles.image} 
-                style={{ backgroundImage: `url(${work.image})` }}
+                style={{ 
+                  backgroundImage: `url(${work.image})`,
+                  backgroundPosition: work.position || 'center'
+                }}
               ></div>
               <div className={styles.overlay}>
                 <h3>{work.title}</h3>
