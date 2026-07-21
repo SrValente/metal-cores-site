@@ -65,6 +65,38 @@
   color: var(--accent-color);
 }
 
+.grupoLink {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 8px;
+  background: rgba(22, 101, 192, 0.2) !important;
+  border: 1px solid rgba(22, 101, 192, 0.5);
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  color: var(--text-primary) !important;
+  font-weight: 700 !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 0 16px rgba(22, 101, 192, 0.3);
+}
+
+.grupoLink:hover {
+  background: rgba(22, 101, 192, 0.4) !important;
+  border-color: var(--accent-blue-light) !important;
+  box-shadow: 0 0 22px rgba(22, 101, 192, 0.6);
+  transform: translateY(-1px);
+}
+
+.pdfTag {
+  background: #d32f2f;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 6px rgba(211, 47, 47, 0.4);
+}
+
 .hamburger {
   display: none;
   background: transparent;

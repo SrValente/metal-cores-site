@@ -23,9 +23,9 @@ export default function PortfolioSection() {
       position: 'center'
     },
     {
-      title: 'Câmara Municipal de Angra dos Reis',
-      description: 'Soluções arquitetônicas e estruturais completas para o setor público. Esquadrias e revestimentos projetados para suportar intempéries costeiras e manter a estética institucional.',
-      image: '/images/portfolio/angra-dos-reis.webp',
+      title: 'Complexo Olímpico de Deodoro',
+      description: 'Engenharia de grande porte e soluções em esquadrias, estruturas e revestimentos metálicos de alta performance para o complexo esportivo em Deodoro, Rio de Janeiro.',
+      image: '/images/portfolio/deodoro.webp',
       position: 'center'
     }
   ];

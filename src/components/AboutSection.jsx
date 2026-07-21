@@ -32,6 +32,7 @@ export default function AboutSection() {
           </ul>
           <div className={styles.actions}>
              <WhatsAppButton text="Conhecer nossa Estrutura Fabril" />
+             <a href="#pdf-portfolio" className="btn btn-secondary">Apresentação Oficial em PDF</a>
           </div>
         </div>
       </div>

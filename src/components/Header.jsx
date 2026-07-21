@@ -30,7 +30,14 @@ export default function Header() {
         </button>
 
         <nav className={`${styles.nav} ${menuOpen ? styles.navOpen : ''}`}>
-          <Link href="#sobre" onClick={() => setMenuOpen(false)}>O Grupo</Link>
+          <Link 
+            href="#pdf-portfolio" 
+            onClick={() => setMenuOpen(false)} 
+            className={styles.grupoLink}
+          >
+            <span>O Grupo</span>
+            <span className={styles.pdfTag}>PDF</span>
+          </Link>
           <Link href="#servicos" onClick={() => setMenuOpen(false)}>Sistemas Construtivos</Link>
           <Link href="#portfolio" onClick={() => setMenuOpen(false)}>Engenharia Executada</Link>
           <WhatsAppButton text="Faça seu Orçamento" />
