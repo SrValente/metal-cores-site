@@ -22,28 +22,47 @@
 }
 
 .logoImg {
-  height: 40px;
+  height: 48px;
   width: auto;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.4));
 }
 
 .logoText {
   display: flex;
   flex-direction: column;
-  line-height: 1.1;
+  line-height: 1.15;
+}
+
+.line1Row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.gmcTag {
+  color: var(--accent-blue-light);
+  font-weight: 900;
+  font-size: 19px;
+  letter-spacing: 1px;
+  background: rgba(22, 101, 192, 0.25);
+  padding: 1px 6px;
+  border-radius: 4px;
+  border: 1px solid rgba(22, 101, 192, 0.5);
 }
 
 .line1 {
-  color: var(--text-secondary);
-  font-size: 20px;
+  color: #b0b4bc;
+  font-size: 17px;
   font-weight: 800;
   letter-spacing: 1px;
 }
 
 .line2 {
-  color: var(--accent-color);
+  color: var(--accent-blue-light);
   font-size: 10px;
   font-weight: 800;
-  letter-spacing: 2px;
+  letter-spacing: 2.5px;
+  margin-top: 2px;
 }
 
 .nav {

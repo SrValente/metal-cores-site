@@ -13,9 +13,12 @@ export default function Header() {
       <div className={`container ${styles.headerContainer}`}>
         <div className={styles.logo}>
           <Link href="/" className={styles.logoLink}>
-            <img src="/logo.png" alt="Grupo Metal Cores Símbolo" className={styles.logoImg} />
+            <img src="/logo-symbol-hd.png" alt="GMC Grupo Metal Cores" className={styles.logoImg} />
             <div className={styles.logoText}>
-              <span className={styles.line1}>GRUPO METAL CORES</span>
+              <div className={styles.line1Row}>
+                <span className={styles.gmcTag}>GMC</span>
+                <span className={styles.line1}>GRUPO METAL CORES</span>
+              </div>
               <span className={styles.line2}>QUALIDADE & INOVAÇÃO</span>
             </div>
           </Link>
@@ -30,14 +33,7 @@ export default function Header() {
         </button>
 
         <nav className={`${styles.nav} ${menuOpen ? styles.navOpen : ''}`}>
-          <Link 
-            href="#pdf-portfolio" 
-            onClick={() => setMenuOpen(false)} 
-            className={styles.grupoLink}
-          >
-            <span>O Grupo</span>
-            <span className={styles.pdfTag}>PDF</span>
-          </Link>
+          <Link href="#hero" onClick={() => setMenuOpen(false)}>O Grupo</Link>
           <Link href="#servicos" onClick={() => setMenuOpen(false)}>Sistemas Construtivos</Link>
           <Link href="#portfolio" onClick={() => setMenuOpen(false)}>Engenharia Executada</Link>
           <WhatsAppButton text="Faça seu Orçamento" />

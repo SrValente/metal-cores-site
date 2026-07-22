@@ -4,7 +4,7 @@ import styles from './HeroSection.module.css';
 
 export default function HeroSection() {
   return (
-    <section className={styles.hero}>
+    <section id="hero" className={styles.hero}>
       <div className={styles.overlay}></div>
       <div className={`container ${styles.contentGrid}`}>
         <div className={styles.textContent}>
@@ -37,7 +37,7 @@ export default function HeroSection() {
 
           <div className={styles.actions}>
             <WhatsAppButton text="Solicitar Estudo de Viabilidade" />
-            <a href="#pdf-portfolio" className="btn btn-secondary">Apresentação Oficial (PDF)</a>
+            <a href="#portfolio" className="btn btn-secondary">Explorar Obras Executadas</a>
           </div>
         </div>
 

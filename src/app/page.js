@@ -3,7 +3,6 @@ import HeroSection from '../components/HeroSection';
 import ClientsSection from '../components/ClientsSection';
 import ServicesSection from '../components/ServicesSection';
 import PortfolioSection from '../components/PortfolioSection';
-import PdfViewerSection from '../components/PdfViewerSection';
 import Footer from '../components/Footer';
 
 export default function Home() {
@@ -11,11 +10,10 @@ export default function Home() {
     <>
       <Header />
       <main>
-        <HeroSection />
+        <HeroSection id="hero" />
         <ClientsSection />
         <ServicesSection />
         <PortfolioSection />
-        <PdfViewerSection />
       </main>
       <Footer />
     </>
