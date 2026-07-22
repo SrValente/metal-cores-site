@@ -15,10 +15,7 @@ export default function Header() {
           <Link href="/" className={styles.logoLink}>
             <img src="/logo-symbol-hd.png" alt="GMC Grupo Metal Cores" className={styles.logoImg} />
             <div className={styles.logoText}>
-              <div className={styles.line1Row}>
-                <span className={styles.gmcTag}>GMC</span>
-                <span className={styles.line1}>GRUPO METAL CORES</span>
-              </div>
+              <span className={styles.line1}>GRUPO METAL CORES</span>
               <span className={styles.line2}>QUALIDADE & INOVAÇÃO</span>
             </div>
           </Link>
